@@ -105,7 +105,7 @@ function displayWeather(data) {
   var city = data.city.name;
   cityHistoryEl.textContent= "";
   
-  // Remember, please loop through the first 6 items in the API response and extract the temperature, humidity, wind speed, and date
+  // Loop through the first 6 items in the API response and extract the temperature, humidity, wind speed, and date
   for (let i=0;i<6;i++){
     temps[i] = data.list[index[i]].main.temp;
     humid[i] = data.list[index[i]].main.humidity;
